@@ -6,7 +6,9 @@ import 'package:testapp1/views/buyers/nav_screens/account_screen.dart';
 import 'package:testapp1/views/buyers/nav_screens/cart_screen.dart';
 import 'package:testapp1/views/buyers/nav_screens/category_screen.dart';
 import 'package:testapp1/views/buyers/nav_screens/home_screen.dart';
+import 'package:testapp1/views/buyers/nav_screens/message_screen.dart';
 import 'package:testapp1/views/buyers/nav_screens/search_screen.dart';
+import 'package:testapp1/views/buyers/nav_screens/store_screen.dart';
 
 class MainScreen extends StatefulWidget{
   const MainScreen ({super.key});
@@ -23,7 +25,9 @@ class _MainScreenState extends State<MainScreen> {
     CategoryScreen(),
     CartScreen(),
     SearchScreen(),
-    AccountScreen(), // Add screens here
+    AccountScreen(),
+    StoreScreen(),
+    MessageScreen(), // Add screens here
   ];
 
   @override

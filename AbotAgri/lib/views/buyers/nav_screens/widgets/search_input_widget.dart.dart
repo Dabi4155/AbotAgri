@@ -7,23 +7,26 @@ class SearchInputWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      child: TextField(
-        decoration: InputDecoration(
-          hintText: 'Search',
-          hintStyle: TextStyle(
-            fontSize: 20,
-            fontFamily: 'Poppins',
-            color: Colors.grey, //Search Bar Text
-          ),
-          prefixIcon: Icon(Icons.search),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: BorderSide(color: Colors.grey), // Grey Search Bar Outline
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: BorderSide(color: Colors.green.shade900), //Green Color Outline Pag Click sa SearchInputWidget Bar
+    return Padding(
+      padding: const EdgeInsets.all(14.0),
+      child: ClipRRect(
+        child: TextField(
+          decoration: InputDecoration(
+            hintText: 'Search',
+            hintStyle: TextStyle(
+              fontSize: 20,
+              fontFamily: 'Poppins',
+              color: Colors.grey, //Search Bar Text
+            ),
+            prefixIcon: Icon(Icons.search),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey), // Grey Search Bar Outline
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.green.shade900), //Green Color Outline Pag Click sa SearchInputWidget Bar
+            ),
           ),
         ),
       ),
