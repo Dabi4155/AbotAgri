@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:testapp1/views/buyers/main_screen.dart';
+import 'package:testapp1/views/buyers/auth/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'italic-ChangaOne',
 
       ),
-      home: MainScreen(),
+      home: RegisterScreen(),
     );
   }
 }
