@@ -23,7 +23,7 @@ android {
 
     defaultConfig {
         applicationId = "com.abot_team.abot_agri"
-        minSdk = flutter.minSdkVersion
+        minSdkVersion 21
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -35,8 +35,17 @@ android {
         }
     }
     dependencies {
-    // Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+        // Import the Firebase BoM
+        implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
+
+
+        // TODO: Add the dependencies for Firebase products you want to use
+        // When using the BoM, don't specify versions in Firebase dependencies
+        implementation("com.google.firebase:firebase-analytics")
+
+
+        // Add the dependencies for any other desired Firebase products
+        // https://firebase.google.com/docs/android/setup#available-libraries
     }
 }
 
